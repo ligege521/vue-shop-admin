@@ -58,7 +58,6 @@
                this.$refs.loginFormRef.validate(async (valid) => {
                     if (!valid) return;
                     const {data: res} = await this.$http.post('login', this.loginForm);
-                    console.log(res);
                     if (res.meta.status === 200) {
                         this.$message.success('登录成功');
                         this.storageToken(res.data.token);
@@ -69,7 +68,6 @@
                })
            },
            storageToken (data) {
-               console.log(data);
                window.sessionStorage.setItem('token', data);
            }
        },
