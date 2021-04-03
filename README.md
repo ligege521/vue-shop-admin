@@ -1,24 +1,3 @@
-# vue_shop
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 1.3.7. 分配用户角色
+- 请求路径：users/:id/role
+有错误，暂未解决
