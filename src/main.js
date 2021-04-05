@@ -12,6 +12,8 @@ import './assets/icon/login/iconfont.css'
 import  './assets/icon/home/iconfont.css'
 // axios
 import './http'
+// treeTable
+import TreeTable from 'vue-table-with-tree-grid'
 
 
 Vue.prototype.$message = Message
@@ -19,6 +21,8 @@ Vue.prototype.$confirm = MessageBox.confirm
 Vue.config.productionTip = false
 
 Vue.use(ElementUI);
+
+Vue.component('tree-table', TreeTable);
 
 
 new Vue({

@@ -8,6 +8,9 @@ import Users from '../views/Users'
 import Rights from '../views//power/Rights'
 import Roles from '../views//power/Roles'
 
+// 商品管理
+import Cate from '../views/commodity/Cate'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -20,6 +23,7 @@ const routes = [
       { path: '/users', component: Users },
       { path: '/rights', component: Rights},
       { path: '/roles', component: Roles},
+      { path: '/categories', component: Cate},
     ]
   }
 ]
