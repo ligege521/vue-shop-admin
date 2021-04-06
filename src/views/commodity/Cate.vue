@@ -184,7 +184,7 @@
            // 获取商品列表
             async getCateList () {
                 let {data: res} = await this.$http.get('categories', {params: this.queryInfo});
-                if (res.meta.status !== 200) return this.$message.error('请求商品列表失败');
+                if (res.meta.status !== 200) return this.$message.error('获取商品列表失败');
                 this.cateList = res.data.result;
                 this.total = res.data.total;
            },
