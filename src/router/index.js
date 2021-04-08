@@ -14,6 +14,12 @@ import Params from '../views/commodity/Params'
 import GoodList from '../views/commodity/List'
 import Add from '../views/commodity/Add'
 
+//订单管理
+import Order from '../views/order/Order'
+
+// 数据统计
+import Report from '../views/report/Report'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -30,6 +36,8 @@ const routes = [
       { path: '/params', component: Params},
       { path: '/goods', component: GoodList},
       { path: '/goods/add', component: Add},
+      { path: '/orders', component: Order},
+      { path: '/reports', component: Report},
     ]
   }
 ]
