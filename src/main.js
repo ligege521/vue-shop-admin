@@ -14,10 +14,24 @@ import  './assets/icon/home/iconfont.css'
 import './http'
 // treeTable
 import TreeTable from 'vue-table-with-tree-grid'
+// 时间过滤器
+import filter from './filter'
+// 富文本编辑器
+import VueQuillEditor from 'vue-quill-editor'
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
 
 
+// 全局消息弹框
 Vue.prototype.$message = Message
+// 全局确认弹框
 Vue.prototype.$confirm = MessageBox.confirm
+// 时间过滤器
+Vue.filter('dateFormat', filter);
+// 富文本
+Vue.use(VueQuillEditor);
+
 Vue.config.productionTip = false
 
 Vue.use(ElementUI);

@@ -11,6 +11,8 @@ import Roles from '../views//power/Roles'
 // 商品管理
 import Cate from '../views/commodity/Cate'
 import Params from '../views/commodity/Params'
+import GoodList from '../views/commodity/List'
+import Add from '../views/commodity/Add'
 
 Vue.use(VueRouter)
 
@@ -26,6 +28,8 @@ const routes = [
       { path: '/roles', component: Roles},
       { path: '/categories', component: Cate},
       { path: '/params', component: Params},
+      { path: '/goods', component: GoodList},
+      { path: '/goods/add', component: Add},
     ]
   }
 ]

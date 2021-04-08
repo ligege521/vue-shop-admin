@@ -254,6 +254,9 @@
             },  
             // tabs 变化触发
             handleClick () {
+                if (this.selectedCateKeys.length !== 3) {
+                    return;
+                }
                 this.getParams();
             },
             // 表单关闭
